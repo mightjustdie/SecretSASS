@@ -9,8 +9,8 @@ function topMoviesToday(){
     })
     .then(function (data) {
       console.log(data);
-      // 'https://image.tmdb.org/t/p/original" + data.results[i].poster_path
-
+      //"https://image.tmdb.org/t/p/original" + data.poster_path
+      console.log(requestURL)
     });
 }
 
