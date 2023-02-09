@@ -1,3 +1,4 @@
+
 var APIKey = 'ab4cf7a017813faa6dd010f44054eb33';
 var requestURL = "https://api.themoviedb.org/3/movie/550?api_key=" + APIKey;
 
@@ -12,6 +13,7 @@ function topMoviesToday(){
       //"https://image.tmdb.org/t/p/original" + data.poster_path
       console.log(requestURL)
     });
+
 }
 
 topMoviesToday();
