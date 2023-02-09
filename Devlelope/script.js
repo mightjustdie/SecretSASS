@@ -1,15 +1,16 @@
-var apiKey = 'ab4cf7a017813faa6dd010f44054eb33'
+var APIKey = 'ab4cf7a017813faa6dd010f44054eb33';
+var requestURL = "https://api.themoviedb.org/3/movie/550?api_key=" + APIKey;
 
 function topMoviesToday(){
     //fetch movie data
-    fetch("https://api.themoviedb.org/3/movie/popularity?api_key=" + apiKey)
+    fetch(requestURL)
+    .then(function (response) {
+      return response.json();
+    })
+    .then(function (data) {
+      console.log(data);
 
-    .then((response) => {
-        return response.json();
-      })
-      .then((data) => {
-        console.log(data);
-      });
+    });
 }
 
 topMoviesToday();
