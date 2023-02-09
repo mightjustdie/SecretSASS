@@ -1,15 +1,15 @@
+var apiKey = 'ab4cf7a017813faa6dd010f44054eb33'
 
+function topMoviesToday(){
+    //fetch movie data
+    fetch("https://api.themoviedb.org/3/movie/popularity?api_key=" + apiKey)
 
-//OTT 
-const options = {
-	method: 'GET',
-	headers: {
-		'X-RapidAPI-Key': '4149f3023dmshe099576ee1eea06p1b8d93jsn5e1e09145b0b',
-		'X-RapidAPI-Host': 'ott-details.p.rapidapi.com'
-	}
-};
+    .then((response) => {
+        return response.json();
+      })
+      .then((data) => {
+        console.log(data);
+      });
+}
 
-fetch('https://ott-details.p.rapidapi.com/advancedsearch?start_year=1970&end_year=2020&min_imdb=6&max_imdb=7.8&genre=action&language=english&type=movie&sort=latest&page=1', options)
-	.then(response => response.json())
-	.then(response => console.log(response))
-	.catch(err => console.error(err));
+topMoviesToday();
