@@ -59,6 +59,7 @@ background-color: rgba(0,0,0,0.25);
     font-weight: bold;
     padding: 10px;
     font-size: 14px;
+    z-index: 100;
 }
 footer {
     color: white;
@@ -68,6 +69,11 @@ footer {
     background-color: #9fa5be;
     border-radius: 10px; 
     padding: 10px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    
+ 
 }
 footer a {
     color: white;
@@ -84,6 +90,7 @@ footer a:hover {
     text-decoration: none;
     cursor: text;
 }
+
 
 .modal {
     display: none; /* Hidden by default */
@@ -143,3 +150,37 @@ footer a:hover {
     cursor: pointer;
   }
   
+
+ #firstMoviePosterContainer {
+    position: absolute;
+    left: 10%;
+    top: 50%;
+    transform: translate(20%, -50%);
+    display: flex;
+    flex-wrap: wrap;
+    }
+    
+    #moviePostersContainer {
+        position: absolute;
+        right: 50%;
+        top: 50%;
+        transform: translate(90%, -50%);
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    img {
+    margin: 23px;
+    }
+
+    .mostpopular {
+        width: 450px;
+        height: 600px;
+        position: absolute;
+        left: 0%;
+        top: 45%;
+        transform: translate(15%, -52%);
+        display: flex;
+        flex-wrap: wrap;
+    }
+
