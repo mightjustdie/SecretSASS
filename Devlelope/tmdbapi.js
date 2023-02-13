@@ -3,6 +3,8 @@ var requestURL = "https://api.themoviedb.org/3/movie/now_playing?api_key=" + API
 
 var moviePostersContainer = document.getElementById("moviePostersContainer")
 // var movieTitle = document.getElementById('movieTitle');
+var top10btn = document.getElementById("nav-topten");
+
 
 function topMoviesToday() {
     //fetch movie data
@@ -24,22 +26,11 @@ function topMoviesToday() {
         // movieName.appendChild(movieTitle);
       }
 
-
-
-    // 1. Create the element
-    //   var topMoviePoster = document.createElement('img');
-
-    // // 2. Give it content
-    // //topMoviePoster = url('https://image.tmdb.org/t/p/original' + data.results[0].poster_path)
-    
-
-    // // 3. Add any attributes (optional)
-    //   topMoviePoster.setAttribute("src",'https://image.tmdb.org/t/p/original' + data.results[0].poster_path)
-    //   topMoviePoster.setAttribute("alt","wakanda")
-    //   console.log(topMoviePoster);
-    // // 4. Append the new element to the page
-    // moviePostersContainer.appendChild(topMoviePoster);
     })
 }
 
 topMoviesToday();
+
+top10btn.addEventListener("click", function() {
+  topMoviesToday();
+});
