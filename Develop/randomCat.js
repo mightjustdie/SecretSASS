@@ -1,4 +1,4 @@
-
+var url = ""
 
 
 function cat(){
@@ -11,10 +11,10 @@ function cat(){
         })
         .then((data) => {
             console.log(data);
-            var url=data[0].url;
-            var img="<img src ='"+url+"'/>";
-            document.getElementById("cat-image").innerHTML = img;
-        
+            url=data[0].url;
+            var img = "<img src='" + url + "' style='width: 100px; height: 100px;'/>";
+            document.getElementById("catImage").innerHTML = img;
+            localStorage.setItem("catImage", url);
         });  
     }   
     
