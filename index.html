@@ -32,14 +32,17 @@
   </section>
   
   <section>
-    <!--Trailer Search Button -->
-    <a href="https://www.youtube.com"><button id="trailer-search">Still unsure? Click Here To Find A Movie Trailer!</a> </button>
+    <!--Get Cat Button -->
+    <!-- <button onclick="cat()" id="trailer-search">Get random Cat</button> -->
+    <!-- <div id="cat-image"></div> -->
   </section>
 
   <div id="welcomeModal" class="modal">
     <div class="modal-content">
       <span class="close">&times;</span>
       <p id="welcomeMessage"></p>
+      <button onclick="cat()" id="trailer-search">Get random Cat</button>
+      <div id="catImage"></div>
     </div>
   </div>
 
@@ -58,7 +61,6 @@
 
   <script src="./Develop/script.js"></script>
   <script src="./Develop/tmdbapi.js"></script>
-  <script scr="./Develop/moviedatabaseapi"></script>
-  </footer>
-
+  <script src="./Develop/randomCat.js"></script>
+</body>
 </html>
