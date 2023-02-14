@@ -7,6 +7,8 @@ var restOfThePostersContainer = document.getElementById("restOfThePostersContain
 var moviePosterWidth = "150px";
 var moviePosterHeight = "225px";
 // var movieTitle = document.getElementById('movieTitle');
+var top10btn = document.getElementById("nav-topten");
+
 
 function topMoviesToday() {
     //fetch movie data
@@ -37,6 +39,7 @@ function topMoviesToday() {
         // movieName.appendChild(movieTitle);
       }
 
+<<<<<<< HEAD
 // Get the modal
 var modal = document.getElementById("welcomeModal");
 
@@ -89,7 +92,13 @@ window.onclick = function(event) {
     //   console.log(topMoviePoster);
     // // 4. Append the new element to the page
     // moviePostersContainer.appendChild(topMoviePoster);
+=======
+>>>>>>> e2cb4687fddb419898b2742f1f1cdc9592d83562
     })
 }
 
 topMoviesToday();
+
+top10btn.addEventListener("click", function() {
+  topMoviesToday();
+});
