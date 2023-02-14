@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Top Movies Today</title>
-  <link rel="stylesheet" href="Devlelope/style.css">
+  <link rel="stylesheet" href="Develop/style.css">
   <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
   <link />
 </head>
@@ -29,20 +29,27 @@
   </header>
 
   <!-- Movie Posters Holders -->
-  <section>
-  <div class="card" id="moviePostersContainer"></div>
+  <section class="allMoviePosters">
+    <h1>Most Popular</h1>
   <div class="card" id="firstMoviePosterContainer"></div>
-  <img src="Assets/Popular.png" class="mostpopular">
+    <h2>2nd-10th Most Popular Movies:</h2>
+  <div class="card" id="moviePostersContainer"></div>
+  
   </section>
     
 
-
   <section>
-    <!--Trailer Search Button -->
+    <!--Get Cat Button -->
     <button onclick="cat()" id="trailer-search">Get random Cat</button>
     <div id="cat-image"></div>
   </section>
 
+  <div id="welcomeModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <p id="welcomeMessage"></p>
+    </div>
+  </div>
 
   <!--Footer-->
   <footer>
@@ -57,10 +64,10 @@
     </div>
   </footer>
 
-  <script src="Devlelope/script.js"></script>
-  <script src="./Devlelope/tmdbapi.js"></script>
-  <script src="./Devlelope/randomCat.js"></script>
-</body>
+  <script src="./Develop/script.js"></script>
+  <script src="./Develop/tmdbapi.js"></script>
+  <script scr="./Develop/moviedatabaseapi"></script>
 
+  </footer>
 
 </html>

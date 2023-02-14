@@ -37,6 +37,43 @@ function topMoviesToday() {
         // movieName.appendChild(movieTitle);
       }
 
+// Get the modal
+var modal = document.getElementById("welcomeModal");
+
+// Get the message displayed in the modal
+var message = document.getElementById("welcomeMessage");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// Check local storage to see if the user's name has been saved
+var userName = localStorage.getItem("userName");
+
+// If the user's name has been saved, use it to greet the user
+if (userName) {
+  message.innerHTML = "Welcome back, " + userName + "!";
+  modal.style.display = "block";
+} else {
+  // If the user's name hasn't been saved, prompt for it
+  userName = prompt("Hello, Welcome to Top Movies Today! What is your name?");
+  localStorage.setItem("userName", userName);
+  message.innerHTML = "Welcome, " + userName + "!";
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+
+
 
 
     // 1. Create the element
