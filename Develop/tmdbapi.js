@@ -52,15 +52,20 @@ var span = document.getElementsByClassName("close")[0];
 // Check local storage to see if the user's name has been saved
 var userName = localStorage.getItem("userName");
 
+var catPFP = localStorage.getItem("catImage")
+
 // If the user's name has been saved, use it to greet the user
 if (userName) {
-  message.innerHTML = "Welcome back, " + userName + "!";
+  message.innerHTML = "Welcome back, " + userName + "!" ;
+  document.getElementById("catImage").innerHTML = "<img src='" + catPFP + "' style='width: 100px; height: 100px;'/>";
   modal.style.display = "block";
 } else {
   // If the user's name hasn't been saved, prompt for it
   userName = prompt("Hello, Welcome to Top Movies Today! What is your name?");
   localStorage.setItem("userName", userName);
-  message.innerHTML = "Welcome, " + userName + "!";
+  // localStorage.setItem("catImage", url);
+  // document.getElementById("catImage").innerHTML = "<img src='" + catPFP + "' style='width: 100px; height: 100px;'/>";
+  message.innerHTML = "Welcome, " + userName + "1234"; 
   modal.style.display = "block";
 }
 
@@ -71,6 +76,7 @@ span.onclick = function() {
 
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
+  //cat();
   if (event.target == modal) {
     modal.style.display = "none";
   }
