@@ -39,7 +39,6 @@ function topMoviesToday() {
         // movieName.appendChild(movieTitle);
       }
 
-<<<<<<< HEAD
 // Get the modal
 var modal = document.getElementById("welcomeModal");
 
@@ -98,8 +97,6 @@ window.onclick = function(event) {
     //   console.log(topMoviePoster);
     // // 4. Append the new element to the page
     // moviePostersContainer.appendChild(topMoviePoster);
-=======
->>>>>>> e2cb4687fddb419898b2742f1f1cdc9592d83562
     })
 }
 
