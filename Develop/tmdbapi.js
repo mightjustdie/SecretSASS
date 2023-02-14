@@ -49,6 +49,8 @@ var span = document.getElementsByClassName("close")[0];
 // Check local storage to see if the user's name has been saved
 var userName = localStorage.getItem("userName");
 
+var catPFP = localStorage.getItem("cat-image")
+
 // If the user's name has been saved, use it to greet the user
 if (userName) {
   message.innerHTML = "Welcome back, " + userName + "!";
@@ -57,7 +59,8 @@ if (userName) {
   // If the user's name hasn't been saved, prompt for it
   userName = prompt("Hello, Welcome to Top Movies Today! What is your name?");
   localStorage.setItem("userName", userName);
-  message.innerHTML = "Welcome, " + userName + "!";
+  localStorage.setItem("cat-image", cat-image);
+  message.innerHTML = "Welcome, " + userName + "!" + cat-image;
   modal.style.display = "block";
 }
 
