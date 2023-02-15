@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Top Movies Today</title>
+  <link rel="stylesheet" href="Develop/style.css"></link>
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet"></link>
+</head>
+
+<body>
+  <!-- Header -->
+  <header>
+    <nav>
+      <a class="title" href="index.html">Top Movies Today</a>
+      <ul class="nav-bar">
+        <li id="nav-topten"><a href="">Top 10 Movies</a></li>
+        <li id="nav-tmdb"> <a href="https://www.themoviedb.org/documentation/api">TMDB API</a> </li>
+        <li id="nav-movie"><a href="https://thecatapi.com/">Random Cat API</a></li>
+        <li id="nav-contact"><a href="">Contact Us</a></li>
+      </ul>
+    <nav>
+  </header>
+  <!-- Movie Posters Holders -->
+  <section class="allMoviePosters">
+    <h1>Most Popular</h1>
+    <div class="card" id="firstMoviePosterContainer"></div>
+    <h2>2nd-10th Most Popular Movies:</h2>
+    <div class="card" id="moviePostersContainer"></div>
+  </section>
+  
+  <section>
+    <!--Get Cat Button -->
+    <!-- <button onclick="cat()" id="trailer-search">Get random Cat</button> -->
+    <!-- <div id="cat-image"></div> -->
+  </section>
+
+  <div id="welcomeModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <p id="welcomeMessage"></p>
+      <button onclick="cat()" id="trailer-search">Generate Randomized User Icon</button>
+      <div id="catImage"></div>
+    </div>
+  </div>
+
+  <!--Footer-->
+  <footer>
+    <p> Top Movies Today By: <a class="secret" href="https://mightjustdie.github.io/floppawebsite/">B</a>renden Thomas, Ali Momin ,Jared Jackson, Imani Santana, David Michaelson</p>
+    <div class="contact">
+      Contact us on GitHub:
+      <a href="https://mightjustdie.github.io/portfolio/">Brenden</a>
+      <a href="https://github.com/alimomin7861">Ali</a>
+      <a href="https://jaredrjack.github.io/Jared-s-portfolio/">Jared</a>
+      <a href=""></a>
+      <a href="https://github.com/DMichaelson9">David</a>
+    </div>
+  </footer>
+
+  <script src="./Develop/script.js"></script>
+  <script src="./Develop/tmdbapi.js"></script>
+  <script src="./Develop/randomCat.js"></script>
+</body>
+</html>

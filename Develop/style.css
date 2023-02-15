@@ -1,0 +1,185 @@
+*, *::before, *::after {
+  font-family: 'Comfortaa';
+}
+header {
+    display: flex;
+    justify-content: center;
+    background-color: #9fa5be;
+    border-radius: 10px; 
+    padding: 10px;
+}
+
+.title {
+display: flex;
+font-size: 48px;
+align-items: center;
+justify-content: center;
+text-decoration: none;
+font-weight: bold;
+color: black;
+}
+
+body {
+    background-color: #090d19;
+}
+
+.nav-bar {
+display: flex;
+justify-content: space-between;
+align-items: center;
+list-style-type: none;
+margin: 0;
+padding: 0;
+}
+
+.nav-bar li {
+    float: left;
+}
+
+.nav-bar a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.nav-bar a:hover {
+background-color: rgba(0,0,0,0.25);
+}
+
+#trailer-search {
+    background-color: #9fa5be;
+    border-radius: 10px; 
+    padding: 10px;
+    border: 2px black solid;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    font-weight: bold;
+    padding: 10px;
+    font-size: 14px;
+    z-index: 100;
+}
+footer {
+    color: white;
+    display: flex;
+    justify-content: center;
+    background-color: #9fa5be;
+    border-radius: 10px; 
+    padding: 10px;
+}
+
+footer a {
+    color: white;
+}
+footer a:hover {
+    color: #485fbb
+}
+.secret {
+    color: white;
+    text-decoration: none;
+}
+.secret:hover{
+    color: white;
+    text-decoration: none;
+    cursor: text;
+}
+
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+  }
+  
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+  }
+  
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+
+ #firstMoviePosterContainer, #moviePostersContainer {
+    margin-top: 25px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    }
+    
+    #moviePostersContainer {
+        display: flex;
+        margin-bottom: 50px;
+    }
+    
+
+    h1, h2 {
+      margin-top: 50px;
+      color: white;
+    }
+
+    .mostpopular {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+
+    @media only screen and (max-width: 1220px) {
+      .nav-bar {
+        flex-direction: column;
+        align-items: center;
+      }
+    
+      .nav-bar li {
+        margin-left: 0;
+        margin-top: 10px;
+      }
+    }
+
+  
