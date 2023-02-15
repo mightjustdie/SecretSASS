@@ -64,7 +64,7 @@ if (userName) {
   localStorage.setItem("userName", userName);
   // localStorage.setItem("catImage", url);
   // document.getElementById("catImage").innerHTML = "<img src='" + catPFP + "' style='width: 100px; height: 100px;'/>";
-  message.innerHTML = "Welcome, " + userName + "1234"; 
+  message.innerHTML = "Welcome, " + userName + "!"; 
   modal.style.display = "block";
 }
 
